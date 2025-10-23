@@ -1,0 +1,17 @@
+
+<div class="container mt-5">
+  <h2>Blog Page</h2>
+  <p>This is the blog page content.</p>
+  <div class="row">
+
+    <div *ngFor = "let blog of blogs" class="col-md-4" >
+        <div class="card mb-4">
+            <div class="card-body">
+            <h5 class="card-title">{{blog.title}}</h5>
+            <p class="card-text">{{blog.body}}</p>
+            <a href="#" class="btn btn-primary">View</a>
+            </div>
+        </div>
+    </div>
+      
+  </div>
