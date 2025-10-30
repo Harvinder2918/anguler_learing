@@ -1,1 +1,95 @@
-<p>anguler-forms works!</p>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-4"> <div class="wrapper d-flex align-items-center justify-content-center h-100">
+            <div class="card login-form">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Login Form using Template driven </h5>
+                    <form  #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" name="email" ngModel>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" name="password" ngModel class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        <div class="sign-up mt-4">
+                            Don't have an account? <a href="#">Create One</a>
+                        </div>
+                    </form>
+                </div>
+                </div>
+                </div></div>
+                 <div class="col-md-4">
+                <div class="wrapper d-flex align-items-center justify-content-center h-100">
+            <div class="card login-form">
+                <div class="card-body">
+                    <h5 class="card-title text-center">sign-up form using reactive form </h5>
+                    <form  [formGroup]="registerForm" (ngSubmit)="onSubmitbyformblider(registerForm)">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text" formControlName="name" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                            <input type="text"  formControlName="lname" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1"  class="form-label">Email</label>
+                            <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1"  class="form-label">Password</label>
+                            <input type="password" formControlName="password"  class="form-control" id="exampleInputPassword1">
+                        </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label" >Adress</label>
+                            <input type="text" formControlName="adress" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        
+                      
+                        <button type="submit" class="btn btn-primary w-100" [disabled]="registerForm.invalid">Submit</button>
+                        <div class="sign-up mt-4">
+                            Don't have an account? <a href="#">Create One</a>
+                        </div>
+                    </form>
+                </div>
+                </div>
+                </div></div>
+                 <div class="col-md-4">
+                <div class="wrapper d-flex align-items-center justify-content-center h-100">
+            <div class="card login-form">
+                <div class="card-body">
+                    <h5 class="card-title text-center">sign-up form using reactive form </h5>
+                    <form  [formGroup]="registerForm" (ngSubmit)="onSubmitbynonformblider(registerForm)">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text"  formControlName="name" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                            <input type="text" formControlName="lname" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                          
+                        
+                      
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        <div class="sign-up mt-4">
+                            Don't have an account? <a href="#">Create One</a>
+                        </div>
+                    </form>
+                </div>
+                </div>
+                </div></div>
+                
+    </div>
+       
+                </div>

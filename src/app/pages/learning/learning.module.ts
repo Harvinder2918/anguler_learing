@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { LearningmainComponent } from './learningmain/learningmain.component';
 import { ParentComponent } from './datapassing/parent/parent.component';
 import { ChildComponent } from './datapassing/child/child.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LearningCardsComponent } from './learningmain/learning-cards/learning-cards.component';
 import { AngulerFormsComponent } from './anguler-forms/anguler-forms.component';
 
@@ -13,7 +13,7 @@ const routes = [
   {path: '', component: LearningmainComponent},
   { path: 'lifecycle-hooks', component: LifecylehookComponent },
   { path: 'data-passing', component: ParentComponent },
-  {path:'anguler-fomrs', Component:AngulerFormsComponent}
+  {path:'anguler-fomrs', component:AngulerFormsComponent}
 ]
 
 @NgModule({
@@ -28,7 +28,8 @@ const routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class LearningModule { }

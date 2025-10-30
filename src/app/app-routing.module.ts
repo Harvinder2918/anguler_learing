@@ -3,13 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MyformtestComponent } from './pages/myformtest/myformtest.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'learning', loadChildren: () => import('./pages/learning/learning.module').then(m => m.LearningModule) }
+  { path: 'learning', loadChildren: () => import('./pages/learning/learning.module').then(m => m.LearningModule) },
+  { path: 'myform', component: MyformtestComponent },
 ];
 
 @NgModule({

@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogdetailComponent } from './pages/blogdetail/blogdetail.component';
+import { MyformtestComponent } from './pages/myformtest/myformtest.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -19,13 +21,16 @@ import { BlogdetailComponent } from './pages/blogdetail/blogdetail.component';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    BlogdetailComponent
+    BlogdetailComponent,
+    MyformtestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })
