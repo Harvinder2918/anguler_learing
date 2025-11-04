@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiServiceService } from 'src/app/services/api-service.service';
 
 @Component({
@@ -9,10 +10,10 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
 export class BlogComponent implements OnInit  {
  blogs:any[] = []
 
- constructor( private api : ApiServiceService) {
+ constructor( private api : ApiServiceService , private router: Router) {
     console.log('Constructor called');
   }
-
+  
  
   ngOnInit() {
     console.log('ngOnInit called');
@@ -22,6 +23,10 @@ export class BlogComponent implements OnInit  {
       this.blogs=res;
       
     });
+    
+  }
+  viewblog(id:any){
+  this.router.navigate(['/blogdetail', id]); // URL will be /user/5
   }
 
  

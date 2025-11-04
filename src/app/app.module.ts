@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BlogdetailComponent } from './pages/blogdetail/blogdetail.component';
 import { MyformtestComponent } from './pages/myformtest/myformtest.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { AddUpadteComponent } from './pages/users/add-upadte/add-upadte.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     HomeComponent,
     AboutComponent,
     BlogdetailComponent,
-    MyformtestComponent
+    MyformtestComponent,
+    AddUpadteComponent
   ],
   imports: [
     BrowserModule,

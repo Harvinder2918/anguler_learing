@@ -26,6 +26,16 @@ export class LearningmainComponent {
     name: "Anguler forms",
     description: "This is yet another column in the Learning Main Component!",
     route: "anguler-fomrs"
+  },
+   {
+    name: "Anguler Directives",
+    description: "This is yet another column in the Learning Main Component!",
+    route: "anguler-directives"
+  },
+   {
+    name: "Anguler Pipes",
+    description: "This is yet another column in the Learning Main Component!",
+    route: "anguler-pipes"
   }
 ];
 
