@@ -22,4 +22,16 @@ apiurl = enviroment.backendUrl;
   getuser(){
     return this.http.get(this.apiurl+'/users')
   }
+  deleteUser(id:any){
+    return this.http.delete(this.apiurl+`/users/${id}`);
+  }
+  postUser(data:any){
+    return this.http.post(this.apiurl+'/users', data);
+  }
+  getUserById(id:any){
+    return this.http.get(this.apiurl+`/users/${id}`);
+  }
+  updateUser(id:any, data:any){
+    return this.http.put(this.apiurl+`/users/${id}`, data);
+  }
 }

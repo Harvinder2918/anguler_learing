@@ -6,7 +6,9 @@ import { AddUpadteComponent } from '../add-upadte/add-upadte.component';
 
 const route = [
   {path:'',component: UsersComponent},
-  {path:'add-update',component: AddUpadteComponent}
+  {path:'add-update',component: AddUpadteComponent},
+   {path:'edit/:id',component: AddUpadteComponent},  
+
 ]
 
 @NgModule({
