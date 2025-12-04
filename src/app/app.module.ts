@@ -13,6 +13,8 @@ import { BlogdetailComponent } from './pages/blogdetail/blogdetail.component';
 import { MyformtestComponent } from './pages/myformtest/myformtest.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AddUpadteComponent } from './pages/users/add-upadte/add-upadte.component';
+import { AuthenticationComponent } from './pages/authentication/authentication.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AddUpadteComponent } from './pages/users/add-upadte/add-upadte.componen
     AboutComponent,
     BlogdetailComponent,
     MyformtestComponent,
-    AddUpadteComponent
+    AddUpadteComponent,
+    AuthenticationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit {
-  users:any = [''];
+  users:any = [];
   constructor(private apiserves : ApiServiceService){
 
   }

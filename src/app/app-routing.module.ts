@@ -5,12 +5,17 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MyformtestComponent } from './pages/myformtest/myformtest.component';
 import { BlogdetailComponent } from './pages/blogdetail/blogdetail.component';
+import { AuthenticationComponent } from './pages/authentication/authentication.component';
+import { LoginComponent } from './pages/login/login.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'about', component: AboutComponent },
+  {path:'login', component:LoginComponent},
+  { path: 'authentication', component: AuthenticationComponent },
   { path: 'learning', loadChildren: () => import('./pages/learning/learning.module').then(m => m.LearningModule) },
    { path: 'users', loadChildren: () => import('./pages/users/users/users.module').then(m => m.UsersModule) },
   { path: 'myform', component: MyformtestComponent },

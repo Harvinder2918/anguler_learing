@@ -37,6 +37,12 @@ export class LearningmainComponent {
     description: "This is yet another column in the Learning Main Component!",
     route: "anguler-pipes"
   }
+  ,
+   {
+    name: "User-curd",
+    description: "This is yet another column in the Learning Main Component!",
+    route: "/users"
+  }
 ];
 
 }
